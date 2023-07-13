@@ -16,7 +16,7 @@ public final class StringUtils {
 	 */
 	public static int levenshteinDistance(CharSequence lhs, CharSequence rhs) {
 		if(lhs == null || rhs == null) {
-			return 0;
+			return -1;
 		}
 		int len0 = lhs.length() + 1;
 		int len1 = rhs.length() + 1;
